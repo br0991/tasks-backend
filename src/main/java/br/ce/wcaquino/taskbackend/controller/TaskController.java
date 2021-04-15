@@ -27,7 +27,7 @@ public class TaskController {
 	public List<Task> findAll() {
 		return todoRepo.findAll();
 	}
-	
+	 
 	@PostMapping
 	public ResponseEntity<Task> save(@RequestBody Task todo) throws ValidationException {
 		if(todo.getTask() == null || todo.getTask() == "") {
