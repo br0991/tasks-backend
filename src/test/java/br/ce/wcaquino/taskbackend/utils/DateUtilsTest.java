@@ -18,7 +18,7 @@ public class DateUtilsTest {
 
 		LocalDate date = LocalDate.of(2030, 01, 01);
 		boolean retorno = DateUtils.isEqualOrFutureDate(date);
-		compara.checkThat(retorno, is(false));
+		compara.checkThat(retorno, is(true));
 		
 	}
 }
